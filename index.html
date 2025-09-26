@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Playlist Cleaner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Spotify Playlist Cleaner</h1>
+        <div id="login-section">
+            <button id="login-btn">Connect to Spotify</button>
+        </div>
+        
+        <div id="app-section" style="display: none;">
+            <div id="playlist-selector">
+                <select id="playlist-dropdown">
+                    <option value="">Select a playlist</option>
+                </select>
+            </div>
+            
+            <div id="song-card" style="display: none;">
+                <img id="album-art" src="" alt="Album Art">
+                <h3 id="song-title"></h3>
+                <p id="artist-name"></p>
+                <div class="buttons">
+                    <button id="remove-btn" class="remove">Remove</button>
+                    <button id="keep-btn" class="keep">Keep</button>
+                </div>
+            </div>
+            
+            <div id="progress">
+                <span id="current-song">0</span> / <span id="total-songs">0</span>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
