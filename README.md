@@ -115,4 +115,5 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-Made with ❤️ for music lovers who want cleaner playlists!
+Made with ❤️ for my love Peppe.
+
