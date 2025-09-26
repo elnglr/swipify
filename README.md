@@ -1,3 +1,6 @@
+Made with ❤️ for Peppe.
+# TI AMO AYICIGIM BENIMMM 
+
 # Spotify Playlist Cleaner
 
 A simple web application that helps you clean up your Spotify playlists by letting you quickly decide which songs to keep or remove.
@@ -29,7 +32,7 @@ A simple web application that helps you clean up your Spotify playlists by letti
 2. **Create a Spotify App:**
    - Go to [Spotify Developer Dashboard](https://developer.spotify.com/dashboard)
    - Click "Create an App"
-   - Add redirect URI: `http://127.0.0.1:3000/`
+   - Add redirect URI: `http://127.0.0.1:5500/`
    - Note your Client ID
 
 3. **Configure the app:**
@@ -115,5 +118,5 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-Made with ❤️ for my love Peppe.
+
 
