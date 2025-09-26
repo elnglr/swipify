@@ -1,41 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify Playlist Cleaner</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Swipify — Spotify Playlist Cleaner</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
-        <h1>Spotify Playlist Cleaner</h1>
-        <div id="login-section">
-            <button id="login-btn">Connect to Spotify</button>
-        </div>
-        
-        <div id="app-section" style="display: none;">
-            <div id="playlist-selector">
-                <select id="playlist-dropdown">
-                    <option value="">Select a playlist</option>
-                </select>
-            </div>
-            
-            <div id="song-card" style="display: none;">
-                <img id="album-art" src="" alt="Album Art">
-                <h3 id="song-title"></h3>
-                <p id="artist-name"></p>
-                <div class="buttons">
-                    <button id="remove-btn" class="remove">Remove</button>
-                    <button id="keep-btn" class="keep">Keep</button>
-                </div>
-            </div>
-            
-            <div id="progress">
-                <span id="current-song">0</span> / <span id="total-songs">0</span>
-            </div>
-        </div>
+  <div class="container">
+    <h1>Spotify Playlist Cleaner</h1>
+
+    <div id="login-section">
+      <button id="login-btn">Connect to Spotify</button>
+      <p class="small">(Make sure your Spotify app Redirect URI is set to <code>http://127.0.0.1:5500/</code>)</p>
     </div>
-    
-    <script src="script.js"></script>
+
+    <div id="app-section" style="display:none;">
+      <div id="playlist-selector">
+        <select id="playlist-dropdown">
+          <option value="">Select a playlist</option>
+        </select>
+      </div>
+
+      <!-- swipeable card -->
+      <div id="song-card" style="display:none;" class="card">
+        <div class="overlay keep">KEEP</div>
+        <div class="overlay remove">REMOVE</div>
+
+        <img id="album-art" src="" alt="Album Art" />
+        <h3 id="song-title"></h3>
+        <p id="artist-name"></p>
+
+        <div class="buttons">
+          <button id="remove-btn" class="remove">Remove</button>
+          <button id="keep-btn" class="keep">Keep</button>
+        </div>
+      </div>
+
+      <div id="controls" style="margin-top:1rem;">
+        <button id="undo-btn" class="undo" style="display:none;">Undo</button>
+      </div>
+
+      <div id="progress" style="margin-top:1rem;">
+        <span id="current-song">0</span> / <span id="total-songs">0</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
